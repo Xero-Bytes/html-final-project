@@ -22,14 +22,15 @@ Welcome to my HTML5 final project — a simple, responsive gallery website featu
 
 html-final-project/
 ├── images/
-│ ├── sunset.jpg
-│ ├── mountain.jpg
-│ ├── forest.jpg
-│ ├── pizza.jpg
-│ ├── sushi.jpg
-│ └── tacos.jpg
+│   ├── sunset.jpg
+│   ├── mountain.jpg
+│   ├── forest.jpg
+│   ├── pizza.jpg
+│   ├── sushi.jpg
+│   └── tacos.jpg
 ├── index.html
 └── README.md
+
 ---
 
 ## 🌐 Live Demo
