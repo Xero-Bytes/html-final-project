@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Taqdees' Stylish Project</title>
+  <title>🍕 Taqdees' Fun Food & Nature Gallery 🍣</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Google Fonts -->
@@ -11,7 +11,7 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #fdfdfd;
+      background-color: #F9FAFB;
       color: #333;
       margin: 0;
       padding: 0;
@@ -19,21 +19,32 @@
     }
 
     header {
-      background-color: #FF8C00;
+      background-color: #6C5CE7;
       padding: 20px;
       color: #fff;
     }
 
     nav a {
-      color: #fff;
+      color: #ffeaa7;
       text-decoration: none;
       font-weight: bold;
       margin-left: 15px;
     }
 
-    h1, h2 {
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    h1 span {
+      color: #fdcb6e;
+    }
+
+    h2 {
       font-family: 'Montserrat', sans-serif;
       margin-top: 20px;
+      color: #0984e3;
     }
 
     .gallery {
@@ -47,8 +58,13 @@
       width: 250px;
       height: auto;
       margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
 
     .food-list {
@@ -69,13 +85,18 @@
     .food-list img {
       width: 150px;
       height: auto;
-      border-radius: 8px;
+      border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .food-list img:hover {
+      transform: scale(1.07);
     }
 
     footer {
-      background-color: #FF8C00;
-      color: #fff;
+      background-color: #6C5CE7;
+      color: #ffeaa7;
       padding: 15px;
       margin-top: 40px;
     }
@@ -84,7 +105,7 @@
 <body>
 
   <header>
-    <h1>Welcome to My Project</h1>
+    <h1>🍕 <span>Taqdees'</span> Fun Food & Nature Gallery 🍣</h1>
     <nav>
       <a href="https://www.example.com" target="_blank">Visit Example</a>
     </nav>
@@ -113,7 +134,6 @@
         <br>Tacos
       </li>
     </ul>
-
   </main>
 
   <footer>
