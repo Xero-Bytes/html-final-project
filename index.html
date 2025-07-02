@@ -6,7 +6,7 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -32,19 +32,27 @@
     }
 
     h1 {
-      font-family: 'Pacifico', cursive;
+      font-family: 'Bree Serif', serif;
       margin: 0;
-      font-size: 2.7rem;
+      font-size: 3rem;
+      color: #fdcb6e;
     }
 
     h1 span {
-      color: #fdcb6e;
+      color: #ffeaa7;
     }
 
     h2 {
       font-family: 'Poppins', sans-serif;
       margin-top: 20px;
       color: #0984e3;
+      font-size: 2rem;
+    }
+
+    /* Gallery Section */
+    .gallery-section {
+      background-color: #f1f8ff;
+      padding: 40px 20px;
     }
 
     .gallery img {
@@ -61,14 +69,20 @@
       transform: scale(1.04);
     }
 
+    /* Food Section */
+    .food-section {
+      background-color: #fff9f3;
+      padding: 40px 20px;
+    }
+
     .food-list {
       list-style: none;
       padding: 0;
-      margin: 20px auto;
+      margin: 0 auto;
     }
 
     .food-list li {
-      margin: 20px auto;
+      margin: 25px auto;
     }
 
     .food-list img {
@@ -103,28 +117,32 @@
   </header>
 
   <main>
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="images/sunset.jpg" alt="Sunset over the ocean">
-      <img src="images/mountain.jpg" alt="Snow-capped mountain range">
-      <img src="images/forest.jpg" alt="Dense green forest">
-    </div>
+    <section class="gallery-section">
+      <h2>🌸 Nature Gallery</h2>
+      <div class="gallery">
+        <img src="images/sunset.jpg" alt="Sunset over the ocean">
+        <img src="images/mountain.jpg" alt="Snow-capped mountain range">
+        <img src="images/forest.jpg" alt="Dense green forest">
+      </div>
+    </section>
 
-    <h2>Top 3 Favorite Foods</h2>
-    <ul class="food-list">
-      <li>
-        <img src="images/pizza.jpg" alt="Delicious pizza with cheese">
-        Pizza
-      </li>
-      <li>
-        <img src="images/sushi.jpg" alt="Fresh sushi rolls">
-        Sushi
-      </li>
-      <li>
-        <img src="images/tacos.jpg" alt="Crispy tacos with filling">
-        Tacos
-      </li>
-    </ul>
+    <section class="food-section">
+      <h2>🍽️ Top 3 Favorite Foods</h2>
+      <ul class="food-list">
+        <li>
+          <img src="images/pizza.jpg" alt="Delicious pizza with cheese">
+          <p>Pizza</p>
+        </li>
+        <li>
+          <img src="images/sushi.jpg" alt="Fresh sushi rolls">
+          <p>Sushi</p>
+        </li>
+        <li>
+          <img src="images/tacos.jpg" alt="Crispy tacos with filling">
+          <p>Tacos</p>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer>
