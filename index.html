@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>🍕 Taqdees' Fun Food & Nature Gallery 🍣</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Segoe+UI&display=swap" rel="stylesheet">
+<html lang="en"><head>
+  
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -17,23 +15,14 @@
       text-align: center;
       color: white;
     }
-    header h1 {
-      font-size: 2.6rem;
-      font-family: 'Bree Serif', serif;
-      margin: 0;
-    }
     nav a {
       text-decoration: none;
       color: #ffe9c7;
       font-weight: bold;
       margin: 0 10px;
     }
-    h2 {
-      font-family: 'Bree Serif', serif;
-      font-size: 2rem;
-      margin: 25px 0 15px;
-      text-align: center;
-      color: #555;
+    h1, h2 {
+      margin: 15px 0;
     }
     .gallery, .food-list {
       display: flex;
@@ -47,12 +36,11 @@
       max-width: 900px;
     }
     .gallery img, .food-list img {
-      width: 230px;
-      height: 150px;
-      border-radius: 12px;
+      width: 250px;
+      height: 160px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       object-fit: cover;
-      transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease;
-      opacity: 0;
     }
     .gallery img:hover, .food-list img:hover {
       transform: scale(1.05);
@@ -65,9 +53,6 @@
       color: #444;
       font-weight: bold;
     }
-    .loaded {
-      opacity: 1;
-    }
     footer {
       text-align: center;
       margin: 30px 0;
@@ -79,31 +64,30 @@
 <body>
 
   <header>
-    <h1>🍕 Taqdees' Fun Food & Nature Gallery 🍣</h1>
+    <h1>🍕 Taqdees' Fun Food &amp; Nature Gallery 🍣</h1>
     <nav>
       <a href="https://www.example.com" target="_blank">Visit Example</a>
     </nav>
   </header>
 
   <main>
-
-    <h2>📸 Beautiful Places Gallery</h2>
+    <h2 style="text-align:center; color:#555;">📸 Beautiful Places Gallery</h2>
     <div class="gallery">
       <div>
         <img src="images/sunset.jpg" alt="Sunset over the ocean">
-        <div class="caption">🌅 Sunset</div>
+        <div class="caption">Sunset</div>
       </div>
       <div>
         <img src="images/mountain.jpg" alt="Snow-capped mountain range">
-        <div class="caption">🏔️ Mountains</div>
+        <div class="caption">Mountains</div>
       </div>
       <div>
         <img src="images/forest.jpg" alt="Dense green forest">
-        <div class="caption">🌳 Forest</div>
+        <div class="caption">Forest</div>
       </div>
     </div>
 
-    <h2>🍽️ Top 3 Favorite Foods</h2>
+    <h2 style="text-align:center; color:#555;">🍽️ Top 3 Favorite Foods</h2>
     <div class="food-list">
       <div>
         <img src="images/pizza.jpg" alt="Delicious pizza with cheese">
@@ -122,19 +106,9 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Taqdees Fatima</p>
+    <p>© 2025 Taqdees Fatima</p>
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const images = document.querySelectorAll("img");
-      images.forEach(img => {
-        img.addEventListener("load", () => {
-          img.classList.add("loaded");
-        });
-      });
-    });
-  </script>
 
-</body>
-</html>
+
+</body></html>
