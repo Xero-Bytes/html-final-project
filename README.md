@@ -20,6 +20,8 @@ Welcome to my HTML5 final project — a simple, responsive gallery website featu
 
 
 
+
+```
 html-final-project/
 ├── images/
 │   ├── sunset.jpg
@@ -30,8 +32,8 @@ html-final-project/
 │   └── tacos.jpg
 ├── index.html
 └── README.md
+```
 
----
 
 ## 🌐 Live Demo
 
