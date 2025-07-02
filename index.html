@@ -3,66 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <title>🍕 Taqdees' Fun Food & Nature Gallery 🍣</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Segoe+UI&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #F9FAFB;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      background-color: #fdfdfd;
+      color: #333;
     }
     header {
-      background-color: #6C5CE7;
+      background-color: #ff8c00;
       padding: 20px;
-      color: #fff;
+      text-align: center;
+      color: white;
     }
-    nav a {
-      color: #ffeaa7;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    h1 {
+    header h1 {
+      font-size: 2.6rem;
       font-family: 'Bree Serif', serif;
       margin: 0;
-      font-size: 3rem;
-      color: #fdcb6e;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ffe9c7;
+      font-weight: bold;
+      margin: 0 10px;
     }
     h2 {
-      color: #0984e3;
+      font-family: 'Bree Serif', serif;
       font-size: 2rem;
-      margin-top: 30px;
+      margin: 25px 0 15px;
+      text-align: center;
+      color: #555;
     }
     .gallery, .food-list {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 25px;
-      margin: 30px auto;
-      max-width: 1100px;
-    }
-    .gallery-item, .food-item {
-      width: 230px;
-    }
-    .gallery-item img, .food-item img {
-      width: 100%;
+      gap: 15px;
+      padding: 20px;
+      background-color: #fffaf0;
       border-radius: 10px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-      transition: transform 0.3s ease;
+      margin: 20px auto;
+      max-width: 900px;
     }
-    .gallery-item img:hover, .food-item img:hover {
+    .gallery img, .food-list img {
+      width: 230px;
+      height: 150px;
+      border-radius: 12px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease;
+      opacity: 0;
+    }
+    .gallery img:hover, .food-list img:hover {
       transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
-    p {
-      margin: 10px 0 0;
-      font-weight: 500;
+    .caption {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 8px;
+      color: #444;
+      font-weight: bold;
+    }
+    .loaded {
+      opacity: 1;
     }
     footer {
-      background-color: #6C5CE7;
-      color: #ffeaa7;
-      padding: 15px;
-      margin-top: 50px;
+      text-align: center;
+      margin: 30px 0;
+      color: #999;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -79,33 +89,33 @@
 
     <h2>📸 Beautiful Places Gallery</h2>
     <div class="gallery">
-      <div class="gallery-item">
+      <div>
         <img src="images/sunset.jpg" alt="Sunset over the ocean">
-        <p>🌅 Sunset</p>
+        <div class="caption">🌅 Sunset</div>
       </div>
-      <div class="gallery-item">
+      <div>
         <img src="images/mountain.jpg" alt="Snow-capped mountain range">
-        <p>🏔️ Mountains</p>
+        <div class="caption">🏔️ Mountains</div>
       </div>
-      <div class="gallery-item">
+      <div>
         <img src="images/forest.jpg" alt="Dense green forest">
-        <p>🌳 Forest</p>
+        <div class="caption">🌳 Forest</div>
       </div>
     </div>
 
     <h2>🍽️ Top 3 Favorite Foods</h2>
     <div class="food-list">
-      <div class="food-item">
+      <div>
         <img src="images/pizza.jpg" alt="Delicious pizza with cheese">
-        <p>🍕 Pizza</p>
+        <div class="caption">🍕 Pizza</div>
       </div>
-      <div class="food-item">
+      <div>
         <img src="images/sushi.jpg" alt="Fresh sushi rolls">
-        <p>🍣 Sushi</p>
+        <div class="caption">🍣 Sushi</div>
       </div>
-      <div class="food-item">
+      <div>
         <img src="images/tacos.jpg" alt="Crispy tacos with filling">
-        <p>🌮 Tacos</p>
+        <div class="caption">🌮 Tacos</div>
       </div>
     </div>
 
@@ -114,6 +124,17 @@
   <footer>
     <p>&copy; 2025 Taqdees Fatima</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll("img");
+      images.forEach(img => {
+        img.addEventListener("load", () => {
+          img.classList.add("loaded");
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
