@@ -47,46 +47,37 @@
       color: #0984e3;
     }
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 20px 0;
-    }
-
     .gallery img {
       width: 250px;
       height: auto;
-      margin: 10px;
+      margin: 20px auto;
+      display: block;
       border-radius: 12px;
       box-shadow: 0 6px 12px rgba(0,0,0,0.15);
       transition: transform 0.3s ease;
     }
 
     .gallery img:hover {
-      transform: scale(1.05);
+      transform: scale(1.04);
     }
 
     .food-list {
       list-style: none;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 20px 0;
+      margin: 20px auto;
     }
 
     .food-list li {
-      display: inline-block;
-      margin: 10px 20px;
-      text-align: center;
+      margin: 20px auto;
     }
 
     .food-list img {
-      width: 150px;
+      width: 200px;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: block;
+      margin: 10px auto;
       transition: transform 0.3s ease;
     }
 
@@ -123,15 +114,15 @@
     <ul class="food-list">
       <li>
         <img src="images/pizza.jpg" alt="Delicious pizza with cheese">
-        <br>Pizza
+        Pizza
       </li>
       <li>
         <img src="images/sushi.jpg" alt="Fresh sushi rolls">
-        <br>Sushi
+        Sushi
       </li>
       <li>
         <img src="images/tacos.jpg" alt="Crispy tacos with filling">
-        <br>Tacos
+        Tacos
       </li>
     </ul>
   </main>
