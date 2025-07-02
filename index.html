@@ -2,85 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Example Project</title>
+  <title>Taqdees' Stylish Project</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f9f9f9;
-    }
-    h1, h2 {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fdfdfd;
       color: #333;
+    }
+    header {
+      background-color: #ff8c00;
+      padding: 20px;
+      text-align: center;
+      color: white;
     }
     nav a {
       text-decoration: none;
-      color: #007acc;
+      color: #ffe9c7;
       font-weight: bold;
+      margin: 0 10px;
+    }
+    h1, h2 {
+      margin: 15px 0;
+    }
+    .gallery, .food-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 20px;
+      background-color: #fffaf0;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 900px;
     }
     .gallery img, .food-list img {
       width: 250px;
-      height: 170px;
+      height: 160px;
       border-radius: 10px;
-      margin: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       object-fit: cover;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .food-list li {
-      margin: 15px 0;
-      font-size: 18px;
-      color: #444;
+    .gallery img:hover, .food-list img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
     .caption {
-      display: block;
-      margin-top: 5px;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 8px;
+      color: #444;
       font-weight: bold;
-      color: #555;
     }
     footer {
-      margin-top: 30px;
+      text-align: center;
+      margin: 30px 0;
+      color: #999;
       font-size: 14px;
-      color: #888;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Welcome to My Project</h1>
+    <h1>🍕 Taqdees' Fun Food & Nature Gallery 🍣</h1>
     <nav>
       <a href="https://www.example.com" target="_blank">Visit Example</a>
     </nav>
   </header>
 
   <main>
-    <h2>Gallery</h2>
+    <h2 style="text-align:center; color:#555;">📸 Beautiful Places Gallery</h2>
     <div class="gallery">
-      <img src="images/sunset.jpg" alt="Sunset over the ocean">
-      <img src="images/mountain.jpg" alt="Snow-capped mountain range">
-      <img src="images/forest.jpg" alt="Dense green forest">
+      <div>
+        <img src="images/sunset.jpg" alt="Sunset over the ocean">
+        <div class="caption">Sunset</div>
+      </div>
+      <div>
+        <img src="images/mountain.jpg" alt="Snow-capped mountain range">
+        <div class="caption">Mountains</div>
+      </div>
+      <div>
+        <img src="images/forest.jpg" alt="Dense green forest">
+        <div class="caption">Forest</div>
+      </div>
     </div>
 
-    <section>
-      <h2>Top 3 Favorite Foods</h2>
-      <ul class="food-list">
-        <li>
-          <img src="images/pizza.jpg" alt="Delicious pizza with cheese">
-          <span class="caption">🍕 Pizza</span>
-        </li>
-        <li>
-          <img src="images/sushi.jpg" alt="Fresh sushi rolls">
-          <span class="caption">🍣 Sushi</span>
-        </li>
-        <li>
-          <img src="images/tacos.jpg" alt="Crispy tacos with filling">
-          <span class="caption">🌮 Tacos</span>
-        </li>
-      </ul>
-    </section>
+    <h2 style="text-align:center; color:#555;">🍽️ Top 3 Favorite Foods</h2>
+    <div class="food-list">
+      <div>
+        <img src="images/pizza.jpg" alt="Delicious pizza with cheese">
+        <div class="caption">🍕 Pizza</div>
+      </div>
+      <div>
+        <img src="images/sushi.jpg" alt="Fresh sushi rolls">
+        <div class="caption">🍣 Sushi</div>
+      </div>
+      <div>
+        <img src="images/tacos.jpg" alt="Crispy tacos with filling">
+        <div class="caption">🌮 Tacos</div>
+      </div>
+    </div>
+
   </main>
 
   <footer>
